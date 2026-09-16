@@ -3,7 +3,7 @@
   <p><sub>🐕 <i>Senior Bark-End Developer & Code Reviewer</i></sub></p>
   
   <h2>Aleksei</h2>
-  <p>Копаюсь во всём, что интересно: от C++ и прокси до анализа данных и self-hosting.</p>
+  <p>Копаюсь во всём, что интересно.</p>
 
   <p>
     <img src="https://img.shields.io/badge/C%2B%2B20-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
