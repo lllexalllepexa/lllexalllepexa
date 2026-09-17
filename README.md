@@ -41,6 +41,10 @@
 > Комплексный дата-пайплайн на 51 000+ транзакций: от сырого CSV до Parquet-хранилища, SQL-витрин (DuckDB / Postgres), Airflow DAG, статистических моделей (OLS, PCA) и дашборда на Streamlit.  
 > `Python` `Airflow` `PySpark` `DuckDB` `PostgreSQL` `Streamlit`
 
+#### 📈 [Retail Metrics & Cohort Analytics](https://github.com/lllexalllepexa/portfolio-retailmetrics) &nbsp;[*(Live Demo)*](https://lllexalllepexa-test1.streamlit.app/)
+> End-to-end аналитика B2C e-commerce: DuckDB OLAP пайплайн, 5 SQL-моделей (GMV, AOV, категорийный микс, когортное удержание), Cohort Retention Heatmap, Streamlit-дашборд и CI с автотестами Pytest.  
+> `Python` `DuckDB` `SQL` `Pandas` `Seaborn` `Streamlit` `Pytest`
+
 #### 🎬 Home Media Server (*arr Stack)
 > Полностью автоматизированный домашний медиасервер в Docker: стек Radarr, Sonarr, Prowlarr, qBittorrent (с маршрутизацией трафика через VPN-контейнер) и безопасный удалённый доступ для стриминга из любой точки.  
 > `Docker Compose` `Linux` `Self-Hosting` `Networking`
