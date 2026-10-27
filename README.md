@@ -10,7 +10,6 @@
 <img src="https://img.shields.io/badge/SQL-3d444d?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
 <img src="https://img.shields.io/badge/DuckDB-3d444d?style=flat-square&logo=duckdb&logoColor=white" alt="DuckDB" />
 <img src="https://img.shields.io/badge/Airflow-3d444d?style=flat-square&logo=apacheairflow&logoColor=white" alt="Airflow" />
-<img src="https://img.shields.io/badge/PySpark-3d444d?style=flat-square&logo=apachespark&logoColor=white" alt="PySpark" />
 <img src="https://img.shields.io/badge/Streamlit-3d444d?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit" />
 <img src="https://img.shields.io/badge/C++20-3d444d?style=flat-square&logo=cplusplus&logoColor=white" alt="C++20" />
 <img src="https://img.shields.io/badge/Qt_6-3d444d?style=flat-square&logo=qt&logoColor=white" alt="Qt 6" />
@@ -28,19 +27,19 @@
 
 **[Retail Metrics & Cohort Analytics](https://github.com/lllexalllepexa/portfolio-retailmetrics)**
 
-Сквозная аналитика e-commerce: 5 SQL-моделей на DuckDB (GMV, AOV, когортное удержание), дашборд на Streamlit, CI на Pytest.
+Метрики e-commerce и когортное удержание: 5 SQL-витрин на DuckDB (выручка с учётом возвратов, AOV, удержание с доверительными интервалами), 22 проверки качества данных, 54 теста на эталонных данных, дашборд на Streamlit. Данные синтетические, и README разбирает, какие тренды порождает сам генератор.
 
-<sub>Python · DuckDB · Pandas · Streamlit · Pytest</sub><br/>
+<sub>Python · DuckDB · SQL · Streamlit · pytest</sub><br/>
 <sub>[Демо →](https://lllexalllepexa-test1.streamlit.app/)</sub>
 
 </td>
 <td width="50%" valign="top">
 
-**[Global Superstore Analytics](https://github.com/lllexalllepexa/testsomeshi)**
+**[Global Superstore: скидки и прибыль](https://github.com/lllexalllepexa/testsomeshi)**
 
-51 000+ транзакций: CSV → Parquet → SQL-витрины, Airflow DAG, модели OLS и PCA, дашборд на Streamlit.
+Где скидки съедают прибыль: 51 290 строк заказов за 2011–2014. Строки со скидкой больше 20% дают 15% выручки и −$815 тыс. прибыли. SQL-витрины в DuckDB и PostgreSQL, регрессия с робастными ошибками, Airflow DAG, дашборд на Streamlit, 53 теста.
 
-<sub>Python · Airflow · PySpark · PostgreSQL</sub>
+<sub>Python · DuckDB · PostgreSQL · statsmodels · Airflow · Streamlit</sub>
 
 </td>
 </tr>
@@ -83,9 +82,9 @@
 
 | Область | Инструменты и методы |
 |---|---|
-| **BI и визуализация** | Streamlit, Plotly, Seaborn, Power BI, Apache Superset, Yandex DataLens |
-| **Бизнес-метрики** | Retention, Churn, LTV, воронки, RFM-сегментация, факторный анализ выручки |
-| **SQL** | оконные функции, рекурсивные CTE, витрины в PostgreSQL, DuckDB, ClickHouse |
-| **Статистика** | проверка гипотез, A/B-тесты, регрессия (OLS), PCA |
-| **ETL и Data Quality** | Pandas, PySpark, Apache Airflow |
+| **BI и визуализация** | Streamlit, Plotly, Matplotlib, Seaborn |
+| **Бизнес-метрики** | выручка и маржа с учётом возвратов, AOV, когортное удержание, анализ скидок |
+| **SQL** | оконные функции, CTE, агрегаты с `FILTER`, витрины в DuckDB и PostgreSQL |
+| **Статистика** | доверительные интервалы, t-тест Уэлча, регрессия (OLS, робастные ошибки HC3) |
+| **ETL и Data Quality** | Pandas, DuckDB, Apache Airflow, проверки качества данных, pytest |
 | **Разработка** | C++20 / Qt 6, JavaScript, Docker, Aiogram 3, SQLAlchemy |
