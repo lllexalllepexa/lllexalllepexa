@@ -1,47 +1,91 @@
-## Алексей
+<div align="center">
+
+<h2>Алексей</h2>
 
 **Аналитик данных · BI · C++ / Qt**
 
-Построение аналитических пайплайнов, SQL-витрин и дашбордов; разработка сетевых приложений на C++.
+Аналитические пайплайны, SQL-витрины и дашборды; сетевые приложения на C++.
 
-**Стек:** Python · SQL (PostgreSQL, DuckDB, ClickHouse) · Airflow · PySpark · Streamlit · C++20 / Qt 6 · Docker
+<img src="https://img.shields.io/badge/Python-3d444d?style=flat-square&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/SQL-3d444d?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
+<img src="https://img.shields.io/badge/DuckDB-3d444d?style=flat-square&logo=duckdb&logoColor=white" alt="DuckDB" />
+<img src="https://img.shields.io/badge/Airflow-3d444d?style=flat-square&logo=apacheairflow&logoColor=white" alt="Airflow" />
+<img src="https://img.shields.io/badge/PySpark-3d444d?style=flat-square&logo=apachespark&logoColor=white" alt="PySpark" />
+<img src="https://img.shields.io/badge/Streamlit-3d444d?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit" />
+<img src="https://img.shields.io/badge/C++20-3d444d?style=flat-square&logo=cplusplus&logoColor=white" alt="C++20" />
+<img src="https://img.shields.io/badge/Qt_6-3d444d?style=flat-square&logo=qt&logoColor=white" alt="Qt 6" />
+<img src="https://img.shields.io/badge/Docker-3d444d?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
 
----
+</div>
+
+<br/>
 
 ### Аналитика данных
 
-**[Retail Metrics & Cohort Analytics](https://github.com/lllexalllepexa/portfolio-retailmetrics)** · [демо](https://lllexalllepexa-test1.streamlit.app/)<br/>
-Сквозная аналитика B2C e-commerce: OLAP-пайплайн на DuckDB, 5 SQL-моделей (GMV, AOV, категорийный микс, когортное удержание), тепловая карта удержания когорт, дашборд на Streamlit, CI с автотестами Pytest.<br/>
-<sub>Python · DuckDB · SQL · Pandas · Seaborn · Streamlit · Pytest</sub>
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**[Global Superstore Analytics](https://github.com/lllexalllepexa/testsomeshi)**<br/>
-Пайплайн обработки 51 000+ транзакций: CSV → Parquet, SQL-витрины (DuckDB / PostgreSQL), Airflow DAG, статистические модели (OLS, PCA), дашборд на Streamlit.<br/>
-<sub>Python · Airflow · PySpark · DuckDB · PostgreSQL · Streamlit</sub>
+**[Retail Metrics & Cohort Analytics](https://github.com/lllexalllepexa/portfolio-retailmetrics)**
+
+Сквозная аналитика e-commerce: 5 SQL-моделей на DuckDB (GMV, AOV, когортное удержание), дашборд на Streamlit, CI на Pytest.
+
+<sub>Python · DuckDB · Pandas · Streamlit · Pytest</sub><br/>
+<sub>[Демо →](https://lllexalllepexa-test1.streamlit.app/)</sub>
+
+</td>
+<td width="50%" valign="top">
+
+**[Global Superstore Analytics](https://github.com/lllexalllepexa/testsomeshi)**
+
+51 000+ транзакций: CSV → Parquet → SQL-витрины, Airflow DAG, модели OLS и PCA, дашборд на Streamlit.
+
+<sub>Python · Airflow · PySpark · PostgreSQL</sub>
+
+</td>
+</tr>
+</table>
 
 ### Разработка
 
-**[Throne Dual Proxy](https://github.com/lllexalllepexa/Throne-DualProxy-win)** · [релизы](https://github.com/lllexalllepexa/Throne-DualProxy-win/releases/latest)<br/>
-Форк Throne (GUI для sing-box) с режимом Dual Proxy: два независимых прокси на локальных портах 2080 и 2081, раздельное определение IP и страны, изолированный DNS. Синхронизирован с upstream.<br/>
-<sub>C++20 · Qt 6 · sing-box · Go</sub>
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**[Ninjutso Sora V2 Battery Tray](https://github.com/lllexalllepexa/ninjutso-sora-v2-battery-tray)**<br/>
-Индикатор заряда беспроводной мыши Ninjutso Sora V2 в системном трее Windows с уведомлениями о низком заряде. Протокол запроса заряда восстановлен по JavaScript веб-драйвера NinjaForce; обмен с мышью идёт напрямую через HID feature reports, без драйвера и сетевого доступа.<br/>
-<sub>Python · hidapi · pystray · Pillow</sub>
+**[Throne Dual Proxy](https://github.com/lllexalllepexa/Throne-DualProxy-win)**
+
+Форк GUI для sing-box: два независимых прокси на разных портах, раздельное определение IP и изолированный DNS.
+
+<sub>C++20 · Qt 6 · sing-box · Go</sub><br/>
+<sub>[Релизы →](https://github.com/lllexalllepexa/Throne-DualProxy-win/releases/latest)</sub>
+
+</td>
+<td width="50%" valign="top">
+
+**[Sora V2 Battery Tray](https://github.com/lllexalllepexa/ninjutso-sora-v2-battery-tray)**
+
+Заряд мыши Ninjutso Sora V2 в трее Windows. HID-протокол восстановлен по веб-драйверу производителя, драйвер не нужен.
+
+<sub>Python · hidapi · pystray</sub>
+
+</td>
+</tr>
+</table>
 
 ### Небольшие утилиты
 
-- **[Twitch Local SOCKS5 Proxy](https://github.com/lllexalllepexa/twitch-local-socks5-proxy)** — расширение для Chrome и Firefox: запрос токена воспроизведения идёт через локальный SOCKS5-прокси, видеопоток — напрямую с CDN. <sub>JavaScript · WebExtensions</sub>
-- **[Deadlock Build Randomizer](https://github.com/lllexalllepexa/randomizer777)** · [демо](https://lllexalllepexa.github.io/randomizer777/) — генератор случайных сборок предметов для игры Deadlock. <sub>HTML · CSS · JavaScript</sub>
+- **[Twitch Local SOCKS5 Proxy](https://github.com/lllexalllepexa/twitch-local-socks5-proxy)** — расширение для Chrome и Firefox, ускоряющее запуск стримов через локальный SOCKS5.
+- **[Deadlock Build Randomizer](https://github.com/lllexalllepexa/randomizer777)** — генератор случайных сборок для игры Deadlock · [демо](https://lllexalllepexa.github.io/randomizer777/)
 
----
+<br/>
 
 ### Компетенции
 
 | Область | Инструменты и методы |
 |---|---|
-| BI и визуализация | Streamlit, Plotly, Seaborn, Power BI, Apache Superset, Yandex DataLens |
-| Бизнес-метрики | Retention, Churn, LTV, воронки, RFM-сегментация, факторный анализ выручки и маржинальности |
-| SQL | оконные функции, рекурсивные CTE, витрины в PostgreSQL, DuckDB, ClickHouse |
-| Статистика | проверка гипотез, A/B-тесты, регрессия (OLS), PCA (scikit-learn) |
-| ETL и Data Quality | Pandas, PySpark, Apache Airflow |
-| Разработка | C++20 / Qt 6, JavaScript (WebExtensions), Docker, Aiogram 3, SQLAlchemy |
+| **BI и визуализация** | Streamlit, Plotly, Seaborn, Power BI, Apache Superset, Yandex DataLens |
+| **Бизнес-метрики** | Retention, Churn, LTV, воронки, RFM-сегментация, факторный анализ выручки |
+| **SQL** | оконные функции, рекурсивные CTE, витрины в PostgreSQL, DuckDB, ClickHouse |
+| **Статистика** | проверка гипотез, A/B-тесты, регрессия (OLS), PCA |
+| **ETL и Data Quality** | Pandas, PySpark, Apache Airflow |
+| **Разработка** | C++20 / Qt 6, JavaScript, Docker, Aiogram 3, SQLAlchemy |
